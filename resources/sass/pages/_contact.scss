@@ -1,0 +1,107 @@
+.contact-widget {
+    position: relative;
+    z-index: 1;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--bs-dark);
+        opacity: 0.85;
+        z-index: -1;
+    }
+
+    @media (max-width: 991px) {
+        &.section-gap {
+            padding: 80px 0 60px;
+        }
+    }
+    .box {
+        position: relative;
+        padding: 65px 20px 40px;
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 0 auto;
+            font-size: 26px;
+            background-color: var(--color-white);
+            color: var(--color-theme);
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+        }
+        h4 {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.contact-form {
+    .title {
+        h3 {
+            margin-bottom: .5rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: normal;
+        }
+    }    
+}
+.follow-us {
+    ul {
+        a {
+            transition: all 0.3s;
+            font-size: 15px;
+
+            i {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                border: 1px solid var(--color-theme);
+                transition: all 0.3s;
+            }
+            &:hover {
+                i {
+                    color: var(--color-white);
+                }
+                [class*=linkedin] {
+                    background-color: #0077B5;
+                    border-color: #0077B5;
+                }
+                [class*=twitter] {
+                    background-color: #55acee;
+                    border-color: #55acee;
+                }
+                [class*=facebook] {
+                    background-color: #3b5999;
+                    border-color: #3b5999;
+                }
+                [class*=google] {
+                    background-color: #dd4b39;
+                    border-color: #dd4b39;
+                }
+                [class*=instagram] {
+                    background-color: #e4405f;
+                    border-color: #e4405f;
+                }
+            }
+        }
+    }
+}
+
+
+// Embed Map
+.mapouter {
+    iframe {
+        margin-bottom: -10px;
+    }
+}

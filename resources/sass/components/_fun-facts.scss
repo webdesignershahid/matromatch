@@ -1,0 +1,16 @@
+.fun-facts {
+    .state {
+        padding: 20px 0 30px;
+        .count {
+            font-size: 32px;
+            margin: 25px 0 8px;
+            font-weight: 700;
+        }
+        h6 {
+            color: var(--color-black);
+            font-family: var(--font-secondary);
+            font-weight: 400;
+            opacity: 0.9;
+        }
+    }
+}

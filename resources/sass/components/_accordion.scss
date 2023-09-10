@@ -1,0 +1,23 @@
+.accordion-item {
+
+    .card-header {
+        background-color: #212529;
+        cursor: pointer;
+        padding: 18px 15px;
+
+        h5 {
+            color: var(--color-white);
+            font-family: var(--font-secondary);
+            font-weight: 300;
+            line-height: 32px;
+            position: relative;
+        }
+    }
+    .card-body {
+        font-size: 1rem;
+    }
+
+    &+.accordion-item {
+        margin-top: 15px;
+    }
+}

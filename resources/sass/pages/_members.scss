@@ -1,0 +1,127 @@
+.members-inner {
+
+    .col-6 {
+        @media (max-width: 365px) {
+            width: 100%;
+        }
+    }
+
+    .profile-item {
+
+        .profile-image {
+            position: relative;
+            img {
+                transform: scale(1);
+                transition: all .4s ease-out 0s;
+            }
+            .imgCount {
+                position: absolute;
+                bottom: 0;
+                color: var(--color-white);
+                font-size: 11px;
+                line-height: normal;
+                padding: 3px 6px;
+            }
+        }
+        .item-details {
+            position: relative;
+
+            .top {
+                position: absolute;
+                right: 18px;
+                top: -17px;
+
+                li {
+                    white-space: nowrap;
+
+                    a {
+                        display: inline-block;
+                        background: var(--color-white);
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 12px;
+                        border-radius: 50%;
+                        white-space: nowrap;
+                    }
+                }
+                
+            }
+            a {
+                color: var(--color-black1);
+                font-family: var(--font-secondary);
+                transition: all 0.3s;
+            }
+            .meta-info li {
+                font-size: 13px;
+            }
+
+        }
+
+        &:hover {
+
+            .profile-image img {
+                transform: scale(1.1);
+            }
+
+            h5 a {
+                color: var(--color-theme);
+            }
+        }
+    }
+}
+
+.sidebar {
+
+    .filter {
+
+        .filter-panel {
+            
+            a {
+                display: block;
+                color: var(--color-black1);
+                font-size: 1rem;
+                border-bottom: 1px solid #dee2e6;
+                padding: 10px 0;
+                position: relative;
+
+                &::after {
+                    content: "\f0d7";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    float: right;
+                }
+                &[aria-expanded="true"]::after {
+                    content: '\f0d8';
+                }
+            }
+            .filter-content {
+                padding: 1rem 0 0;   
+                
+                li {
+                    margin: 7px 0;
+                    span {
+                        font-size: 11px;
+                        background-color: var(--color-black1);
+                        color: var(--color-white);
+                        width: 20px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        border-radius: 50%;
+                    }
+                } 
+            }
+
+            input[type='text'] {
+                height: 45px;
+                border-radius: 0;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

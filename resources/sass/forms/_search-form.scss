@@ -1,0 +1,137 @@
+// Search Form Home (Basic)
+.search-form-home {
+    position: relative;
+    margin-top: -70px;
+
+    .input-group {
+
+        &.py-lg {
+            @media (min-width:992px) {
+                padding-top: 2.1rem !important;
+                padding-bottom: 2.1rem !important;
+            }
+        }
+        
+        label {
+            line-height: normal;
+            margin-bottom: 5px;
+            padding-left: 1rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        select {
+            margin-left: 0 !important;
+            height: 45px;
+            color: var(--color-white);
+            opacity: 0.6;
+            border: none;
+            background: none;
+            appearance: auto;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                border-color: #4c4c4c;
+            }
+
+            option {
+                color: var(--color-black);
+                opacity: 1;
+            }
+
+            @-moz-document url-prefix() {
+                appearance: none;
+            }
+        }
+
+        button[type="submit"] {
+            padding: 0 40px;
+            background-color: var(--color-theme);
+            font-size: 1.125rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+
+            @media (max-width: 992px) {
+                padding: 14px 20px;
+                font-weight: 300;
+            }
+           
+        }
+    }
+}
+.filter-form {
+    @media (max-width: 992px) {
+        padding: 20px 30px 30px;
+    }
+    @media (max-width: 576px) {
+        padding: 10px 15px 30px;;
+    }
+}
+
+form select.form-select,
+.contact-form input {
+    height: 45px;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;   
+    border-color: #ced4da;;
+    
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #ced4da;
+    }
+}
+
+.contact-form {
+
+    input {
+        background-color: var(--color-white);
+    }
+    textarea {
+        background-color: var(--color-white);
+        box-shadow: none;
+        border-radius: 0;   
+        border-color: #ced4da;
+
+        &:focus {
+            box-shadow: none;
+            outline: none;
+            border-color: #ced4da;
+        }
+    }
+}
+
+.hero-search-form {
+    margin: 80px 0 70px 0;
+    
+    @media (min-width: 1199px) {
+        margin: 140px 0 70px 0;
+    }
+
+    h4 {
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    p {
+        font-weight: 600;
+        margin-bottom: 18px;
+        font-size: 18px;
+    }
+
+}
+
+
+// Search Profile Page 
+.search-profile {
+    .search-form {
+
+        @media (min-width: 1199px) {
+            button[type=submit] {
+                padding: 1.2rem 1.62rem;
+            }
+        }
+    }
+}

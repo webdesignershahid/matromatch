@@ -1,0 +1,215 @@
+.profile-details {
+    @media (min-width: 1199px) {
+        margin-top: 99px;
+    }
+
+
+    .profile-header {
+        height: 250px;
+        border-radius: 8px;
+        z-index: 1;
+
+        .cover-image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: var(--color-black);
+            opacity: 0.5;
+        }
+        .header-content {
+            position: absolute;
+            bottom: -120px;
+            left: 12px;
+            width: 100%;
+            
+            @media (min-width: 768px) {
+                bottom: 10px;
+            }
+        }
+
+        .user-profile-thumb {
+            @media (min-width: 768px) {
+                margin-bottom: -75px;
+            }
+
+            a {
+                display: flex;
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                background-color: #ddd;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+            }
+        }
+
+        .name-meta {
+            h3, p {
+                color: var(--color-black);
+    
+                @media (min-width: 768px) {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    .welcomenote {
+        overflow: hidden;
+        padding: 30px;
+        margin-top: 140px;
+
+        @media (min-width: 768px) {
+            padding: 80px 30px 20px 30px;
+            margin-top: 0;
+        }       
+
+        p {
+            @media (min-width: 768px) {
+                padding-left: 6rem;
+            }
+        }
+        i {
+            opacity: 0.5;
+        }
+    }
+    .photos-videos {
+        .box {
+            padding: 40px 30px;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--color-black);
+                opacity: 0.7;
+                z-index: -1;
+            }
+
+            h4, p {
+                color: var(--color-white);
+            }
+            a {
+                color: var(--color-black);
+                background-color: var(--color-white);
+                padding: 8px 16px;
+                display: inline-block;
+                font-size: 15px;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .details-information {
+        .box {
+            .label {
+                font-weight: 600;
+            }
+            .value {
+                font-weight: 300;
+            }
+        }
+        .interest {
+            a {
+                display: inline-block;
+                background-color: rgba(47, 128, 237, 0.1);
+                color: var(--color-black);
+                padding: 4px 14px;
+                margin: 5px 0;
+                font-weight: 300;
+                font-size: 15px;
+
+                i {
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        position: sticky;
+        top: 130px;
+
+        .widget {
+
+            .action {
+                a {
+                    color: var(--color-black);
+                    font-size: 16px;
+                    line-height: 40px;
+                    transition: all 0.3s;
+
+                    i {
+                        color: var(--color-theme);
+                        width: 30px;
+                    }
+
+                    &:hover {
+                        padding-left: 5px;
+                    }
+                }
+            }
+
+            .share {
+                a {
+                    color: var(--color-white);
+                    font-size: 12px;
+                    display: inline-block;
+                    padding: 0 10px;
+                    margin: 5px 0;
+                    font-weight: 300;
+
+                    i {
+                        width: 15px;
+                    }
+
+                    &[class*='facebook'] {
+                       background-color: #3b5999; 
+                    }
+                    &[class*='twitter'] {
+                       background-color: #55acee; 
+                    }
+                    &[class*='linkedin'] {
+                       background-color: #0077B5; 
+                    }
+                    &[class*='mail'] {
+                       background-color: #dd4b39; 
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.related-profile {
+    position: relative;
+    z-index: 1;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-black);
+        z-index: -1;
+        opacity: 0.8;
+    }
+}
